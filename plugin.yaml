@@ -1,0 +1,8 @@
+name: local-files
+version: 0.1.0
+description: "Seamlessly synchronize selected macOS folders with remote Hermes projects."
+author: Joskmo
+license: MIT
+hooks: []
+provides:
+  commands: []

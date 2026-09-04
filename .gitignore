@@ -1,0 +1,27 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.venv/
+venv/
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+*.local.json
+
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/
+
+# Runtime data and logs
+*.log
+mappings.json

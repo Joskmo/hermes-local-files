@@ -1,0 +1,11 @@
+{
+  "name": "hermes-local-files",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Seamless local macOS folders for remote Hermes projects",
+  "scripts": {
+    "test": "python3 -m unittest discover -v && node --test tests-js/*.test.mjs",
+    "build": "python3 scripts/build_desktop.py && python3 scripts/build_readme_assets.py",
+    "check": "python3 scripts/build_desktop.py && python3 scripts/build_readme_assets.py && python3 -m compileall -q hermes_local_files dashboard plugins scripts && node --check desktop/plugin.js"
+  }
+}

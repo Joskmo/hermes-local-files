@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes Local Files architecture</title>
+  <desc id="desc">A local Mac folder connects to Syncthing and a Hermes project on Debian through a restricted SSH tunnel.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1e293b" stroke-width="1" opacity=".55"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <marker id="cyanArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6 0 12Z" fill="#22d3ee"/>
+    </marker>
+    <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6 0 12Z" fill="#34d399"/>
+    </marker>
+    <marker id="roseArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6 0 12Z" fill="#fb7185"/>
+    </marker>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#000" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="620" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="620" rx="24" fill="url(#grid)"/>
+
+  <text x="54" y="54" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="25" font-weight="700">What happens under the hood</text>
+  <text x="54" y="82" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">Hermes core stays unchanged. Synchronization runs separately and continues while Desktop is closed.</text>
+
+  <rect x="42" y="112" width="480" height="425" rx="20" fill="#071827" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="68" y="145" fill="#7dd3fc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">USER'S MAC</text>
+
+  <rect x="678" y="112" width="480" height="425" rx="20" fill="#09221b" stroke="#34d399" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="704" y="145" fill="#6ee7b7" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">REMOTE DEBIAN SERVER</text>
+
+  <path d="M285 241V299" stroke="#22d3ee" stroke-width="3" marker-end="url(#cyanArrow)"/>
+  <path d="M285 382V440" stroke="#22d3ee" stroke-width="3" marker-end="url(#cyanArrow)"/>
+  <path d="M918 241V299" stroke="#34d399" stroke-width="3" marker-end="url(#greenArrow)"/>
+  <path d="M918 382V440" stroke="#34d399" stroke-width="3" marker-end="url(#greenArrow)"/>
+  <path d="M480 326H716" stroke="#fb7185" stroke-width="3" stroke-dasharray="9 6" marker-end="url(#roseArrow)"/>
+  <path d="M720 366H484" stroke="#fb7185" stroke-width="3" stroke-dasharray="9 6" marker-end="url(#roseArrow)"/>
+  <text x="544" y="315" text-anchor="middle" fill="#fff1f2" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5">Mac → server</text>
+  <text x="656" y="389" text-anchor="middle" fill="#fff1f2" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5">server → Mac</text>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="169" width="386" height="72" rx="12" fill="#102a43" stroke="#38bdf8" stroke-width="2"/>
+    <text x="118" y="199" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">Hermes Desktop · Local Files</text>
+    <text x="118" y="222" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">Folder picker, status, and project creation</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="300" width="386" height="82" rx="12" fill="#102a43" stroke="#38bdf8" stroke-width="2"/>
+    <text x="118" y="331" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">Local companion + Syncthing</text>
+    <text x="118" y="354" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">127.0.0.1 · LaunchAgent · 0600 token</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="441" width="386" height="68" rx="12" fill="#172554" stroke="#818cf8" stroke-width="2"/>
+    <text x="118" y="471" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">Normal folder in Finder</text>
+    <text x="118" y="493" fill="#a5b4fc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">Files remain physically on the Mac</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="722" y="169" width="392" height="72" rx="12" fill="#14332b" stroke="#34d399" stroke-width="2"/>
+    <text x="748" y="199" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">Hermes backend plugin</text>
+    <text x="748" y="222" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">Validates the path and creates a project mapping</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="722" y="300" width="392" height="82" rx="12" fill="#14332b" stroke="#34d399" stroke-width="2"/>
+    <text x="748" y="331" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">Server Syncthing</text>
+    <text x="748" y="354" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">127.0.0.1 · systemd user service · versioning</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="722" y="441" width="392" height="68" rx="12" fill="#2a2145" stroke="#a78bfa" stroke-width="2"/>
+    <text x="748" y="471" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">Hermes project under /srv</text>
+    <text x="748" y="493" fill="#c4b5fd" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">The agent works with this copy</text>
+  </g>
+
+  <rect x="525" y="179" width="150" height="95" rx="14" fill="#3b1623" stroke="#fb7185" stroke-width="2"/>
+  <path d="M600 274V366" stroke="#fb7185" stroke-width="2" opacity=".8"/>
+  <circle cx="600" cy="326" r="5" fill="#fb7185"/>
+  <circle cx="600" cy="366" r="5" fill="#fb7185"/>
+  <text x="600" y="205" text-anchor="middle" fill="#fecdd3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700">SSH tunnel</text>
+  <text x="600" y="226" text-anchor="middle" fill="#fecdd3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5">server.example.com:22</text>
+  <text x="600" y="246" text-anchor="middle" fill="#fecdd3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5">pinned host key</text>
+  <text x="600" y="264" text-anchor="middle" fill="#fecdd3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5">127.0.0.1:22000 only</text>
+
+  <g transform="translate(54 574)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">
+    <circle cx="7" cy="0" r="6" fill="#38bdf8"/><text x="20" y="4" fill="#cbd5e1">local side</text>
+    <circle cx="165" cy="0" r="6" fill="#34d399"/><text x="178" y="4" fill="#cbd5e1">server side</text>
+    <circle cx="333" cy="0" r="6" fill="#fb7185"/><text x="346" y="4" fill="#cbd5e1">restricted SSH channel</text>
+    <circle cx="565" cy="0" r="6" fill="#a78bfa"/><text x="578" y="4" fill="#cbd5e1">project data</text>
+  </g>
+</svg>

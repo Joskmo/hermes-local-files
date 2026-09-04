@@ -1,0 +1,8 @@
+{
+  "name": "local-files",
+  "label": "Local Files",
+  "description": "Mirror selected macOS folders into remote Hermes projects",
+  "icon": "FolderSync",
+  "version": "0.1.0",
+  "api": "plugin_api.py"
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">How to use Hermes Local Files</title>
+  <desc id="desc">Three steps: choose a folder, wait for synchronization, and work with the same files in Finder and Hermes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#64748b"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity=".25"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="330" rx="24" fill="url(#bg)"/>
+  <text x="60" y="58" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="25" font-weight="700">To the user, this is a normal folder on the Mac</text>
+  <text x="60" y="88" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15">Set it up once. Files synchronize automatically after that.</text>
+
+  <path d="M360 198 H425" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M760 198 H825" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="125" width="295" height="145" rx="18" fill="#102a43" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="97" cy="166" r="22" fill="#0ea5e9"/>
+    <text x="97" y="173" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="20" font-weight="700">1</text>
+    <text x="132" y="164" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="18" font-weight="700">Choose a folder</text>
+    <text x="85" y="209" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">Local Files → Add folder</text>
+    <text x="85" y="235" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">Select a folder and click Open</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="450" y="125" width="300" height="145" rx="18" fill="#14332b" stroke="#34d399" stroke-width="2"/>
+    <circle cx="492" cy="166" r="22" fill="#10b981"/>
+    <text x="492" y="173" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="20" font-weight="700">2</text>
+    <text x="527" y="164" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="18" font-weight="700">Wait until ready</text>
+    <text x="480" y="209" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">Status: Synchronizing…</text>
+    <text x="480" y="235" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">Ready: Synchronized</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="850" y="125" width="295" height="145" rx="18" fill="#2a2145" stroke="#a78bfa" stroke-width="2"/>
+    <circle cx="892" cy="166" r="22" fill="#8b5cf6"/>
+    <text x="892" y="173" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="20" font-weight="700">3</text>
+    <text x="927" y="164" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="18" font-weight="700">Work normally</text>
+    <text x="875" y="209" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">Keep using the folder in Finder</text>
+    <text x="875" y="235" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5">Hermes edits appear on the Mac</text>
+  </g>
+</svg>
